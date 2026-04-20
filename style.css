@@ -1,0 +1,639 @@
+/* Google Fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;600&family=Lora:ital,wght@0,400;1,400&display=swap');
+
+/* Remove default browser spacing */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Page background and base font */
+body {
+	background-color: #120826;
+	background-image: url('elegant-purple-magic-dust-background-vector-glowing-pixie-dust.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	color: #e8dfc8;
+	font-family: 'Lora', Georgia, serif;
+	font-size: 13px;
+	line-height: 1.8;
+	text-align: center;
+}
+
+/* Default link colours */
+a:link {
+	color: #c9a84c;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #a07830;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	color: #f0d080;
+	text-decoration: underline;
+}
+
+/* Nav link colours */
+#nav a:link, #nav a:visited {
+	color: #e8dfc8;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#nav a:hover, #nav a:active {
+	color: #c9a84c;
+	background-color: #2a0a40;
+	text-decoration: none;
+}
+
+/* Footer link colours */
+#footer a:link, #footer a:visited {
+	color: #c9a84c;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#footer a:hover, #footer a:active {
+	color: #f0d080;
+	text-decoration: underline;
+}
+
+/* Quick list link colours */
+.quick-list li a:link, .quick-list li a:visited {
+	color: #b8a9d4;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.quick-list li a:hover {
+	color: #c9a84c;
+	text-decoration: none;
+}
+
+/* Main container - centred and fixed width */
+#container {
+	margin: 20px auto;
+	width: 900px;
+	text-align: left;
+	display: block;
+}
+
+/* Keep all sections the same width */
+#header, #nav, #hero, #hero-sub, .star-divider, #products, #pagebottom, .dark-band, #footer {
+	width: 900px;
+}
+
+/* Header with site title */
+#header {
+	background-color: #0d0520;
+	border-top: 3px solid #c9a84c;
+	border-left: 3px solid #c9a84c;
+	border-right: 3px solid #c9a84c;
+	padding: 30px 40px 24px;
+	display: block;
+}
+
+#header h1 {
+	font-family: 'Cinzel Decorative', serif;
+	font-size: 34px;
+	color: #c9a84c;
+	text-shadow: 0 0 18px #8b5cf6, 2px 2px 4px #000;
+	letter-spacing: 3px;
+	margin-bottom: 6px;
+}
+
+#header p {
+	font-family: 'Cinzel', serif;
+	font-size: 10px;
+	color: #b8a9d4;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+}
+
+/* Navigation bar */
+#nav {
+	background-color: #0a021a;
+	border-left: 3px solid #c9a84c;
+	border-right: 3px solid #c9a84c;
+	border-bottom: 3px solid #c9a84c;
+	padding-left: 16px;
+	overflow: hidden;
+	display: block;
+}
+
+/* Float the nav items into a row */
+#nav ul {
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#nav li {
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#nav li a {
+	display: block;
+	font-family: 'Cinzel', serif;
+	font-size: 11px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	padding: 14px 22px;
+	border-right: 1px solid #2a1840;
+}
+
+/* Hero section on the home page */
+#hero {
+	background-color: #0d0520;
+	border-left: 3px solid #c9a84c;
+	border-right: 3px solid #c9a84c;
+	display: block;
+	padding: 0;
+	overflow: hidden;
+}
+
+#hero-img { width: 100%; }
+
+/* Hero image stretches full width */
+#hero-img img {
+	width: 100%;
+	height: 380px;
+	object-fit: cover;
+	object-position: center top;
+	display: block;
+	border-bottom: 2px solid #c9a84c;
+}
+
+#hero-inner { padding: 40px 60px 50px 60px; }
+
+#hero h2 {
+	font-family: 'Cinzel Decorative', serif;
+	font-size: 36px;
+	color: #c9a84c;
+	text-shadow: 0 0 22px #8b5cf6, 2px 2px 6px #000;
+	margin-bottom: 18px;
+	line-height: 1.25;
+}
+
+#hero p {
+	font-style: italic;
+	font-size: 14px;
+	color: #c8bfdf;
+	margin-bottom: 28px;
+	line-height: 1.7;
+}
+
+/* Smaller hero used on the about and contact pages */
+#hero-sub {
+	background-color: #0d0520;
+	border-left: 3px solid #c9a84c;
+	border-right: 3px solid #c9a84c;
+	border-bottom: 1px solid #4a3060;
+	padding: 52px 40px;
+	text-align: center;
+	display: block;
+}
+
+#hero-sub h2 {
+	font-family: 'Cinzel Decorative', serif;
+	font-size: 30px;
+	color: #c9a84c;
+	text-shadow: 0 0 18px #8b5cf6, 2px 2px 4px #000;
+	margin-bottom: 10px;
+}
+
+#hero-sub p {
+	font-style: italic;
+	color: #b8a9d4;
+	font-size: 13px;
+}
+
+/* Reusable button style */
+.btn-magic {
+	display: inline-block;
+	font-family: 'Cinzel', serif;
+	font-size: 11px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	padding: 12px 28px;
+	background-color: #2a0a40;
+	border: 1px solid #c9a84c;
+	color: #c9a84c;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.btn-magic:hover {
+	background-color: #c9a84c;
+	color: #0d0520;
+	text-decoration: none;
+}
+
+/* Decorative star divider between sections */
+.star-divider {
+	text-align: center;
+	color: #c9a84c;
+	font-size: 14px;
+	letter-spacing: 10px;
+	padding: 8px 0;
+	background-color: #08020f;
+	border-left: 3px solid #c9a84c;
+	border-right: 3px solid #c9a84c;
+	border-top: 1px solid #2a1840;
+	border-bottom: 1px solid #2a1840;
+	display: block;
+}
+
+/* Products section with the wand cards */
+#products {
+	background-color: #0f0728;
+	border-left: 3px solid #c9a84c;
+	border-right: 3px solid #c9a84c;
+	padding: 30px 28px;
+	overflow: hidden;
+	display: block;
+}
+
+#products h3 {
+	font-family: 'Cinzel Decorative', serif;
+	font-size: 22px;
+	color: #c9a84c;
+	text-align: center;
+	margin-bottom: 8px;
+	text-shadow: 0 0 14px #8b5cf6;
+}
+
+#products > p {
+	font-style: italic;
+	color: #b8a9d4;
+	text-align: center;
+	margin-bottom: 24px;
+}
+
+/* Individual wand card - floated to sit 3 in a row */
+.wand-card {
+	float: left;
+	width: 259px;
+	margin-right: 30px;
+	margin-bottom: 30px;
+	background-color: #0d0520;
+	border: 1px solid #4a3060;
+	border-top: 3px solid #8b5cf6;
+	padding: 18px 14px;
+	text-align: center;
+}
+
+/* Remove right margin on the last card in each row */
+.wand-card.last { margin-right: 0; }
+
+.wand-card:hover {
+	border-color: #c9a84c;
+	border-top-color: #c9a84c;
+}
+
+.wand-card h4 {
+	font-family: 'Cinzel', serif;
+	font-size: 13px;
+	color: #c9a84c;
+	margin-bottom: 6px;
+	letter-spacing: 1px;
+}
+
+.wand-card .price {
+	font-family: 'Cinzel Decorative', serif;
+	font-size: 17px;
+	color: #8b5cf6;
+	margin-bottom: 10px;
+}
+
+.wand-card p {
+	font-size: 12px;
+	color: #b8a9d4;
+	margin-bottom: 16px;
+	font-style: italic;
+	line-height: 1.6;
+}
+
+/* Wand product image inside each card */
+.wand-img {
+	width: 100%;
+	height: 160px;
+	object-fit: cover;
+	margin-bottom: 14px;
+	border: 1px solid #4a3060;
+}
+
+/* Clears floated elements so the next section starts fresh */
+.clearfix {
+	clear: both;
+	display: block;
+	height: 0;
+}
+
+/* Two column section used on all three pages */
+#pagebottom {
+	display: block;
+	border-left: 3px solid #c9a84c;
+	border-right: 3px solid #c9a84c;
+	overflow: hidden;
+	background-color: #0a021a;
+}
+
+/* Left column - wider, holds main content */
+#left-col {
+	background-color: #0f0728;
+	border-right: 1px solid #2a1840;
+	float: left;
+	min-height: 480px;
+	width: 596px;
+	padding: 36px 38px;
+	display: block;
+}
+
+/* Right column - narrower, holds links and extra info */
+#right-col {
+	background-color: #0a021a;
+	float: left;
+	min-height: 480px;
+	width: 297px;
+	padding: 28px 22px;
+	display: block;
+}
+
+/* Large gold section heading */
+.section-heading {
+	font-family: 'Cinzel Decorative', serif;
+	font-size: 18px;
+	color: #c9a84c;
+	margin-bottom: 14px;
+	padding-bottom: 8px;
+	border-bottom: 1px solid #3a2060;
+}
+
+/* Smaller uppercase heading for sub sections */
+.section-heading-sm {
+	font-family: 'Cinzel', serif;
+	font-size: 10px;
+	color: #c9a84c;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin-top: 22px;
+	margin-bottom: 8px;
+	padding-bottom: 4px;
+	border-bottom: 1px solid #2a1840;
+}
+
+/* Dark full width band used for story and CTA sections */
+.dark-band {
+	background-color: #07010e;
+	border-left: 3px solid #c9a84c;
+	border-right: 3px solid #c9a84c;
+	border-top: 1px solid #3a2060;
+	border-bottom: 1px solid #3a2060;
+	padding: 44px 60px;
+	text-align: center;
+	display: block;
+}
+
+.dark-band h3 {
+	font-family: 'Cinzel Decorative', serif;
+	font-size: 20px;
+	color: #c9a84c;
+	margin-bottom: 14px;
+	text-shadow: 0 0 14px #8b5cf6;
+}
+
+.dark-band p {
+	font-style: italic;
+	color: #b8a9d4;
+	max-width: 600px;
+	margin: 0 auto 10px;
+	font-size: 13px;
+}
+
+/* Specifications table on the about page */
+.specs-table {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 12px;
+	margin-top: 16px;
+}
+
+.specs-table th {
+	background-color: #3a0a50;
+	color: #c9a84c;
+	font-family: 'Cinzel', serif;
+	padding: 10px 14px;
+	text-align: left;
+	border: 1px solid #4a3060;
+	font-size: 10px;
+	text-transform: uppercase;
+}
+
+.specs-table td {
+	padding: 9px 14px;
+	border: 1px solid #2a1840;
+	color: #c8bfdf;
+}
+
+/* Alternate row colour for readability */
+.specs-table tr:nth-child(even) td { background-color: #0d0520; }
+
+/* List used in the right column for links and info */
+.quick-list {
+	list-style: none;
+	margin: 0 0 22px;
+	padding: 0;
+}
+
+.quick-list li {
+	list-style: none;
+	border-bottom: 1px solid #2a1840;
+	padding: 8px 0;
+	font-size: 12px;
+}
+
+/* Contact form layout - form on left, info on right */
+.contact-grid-left {
+	float: left;
+	width: 300px;
+	margin-right: 26px;
+}
+
+.contact-grid-right {
+	float: left;
+	width: 194px;
+}
+
+.form-group { margin-bottom: 16px; }
+
+.form-group label {
+	display: block;
+	font-family: 'Cinzel', serif;
+	font-size: 9px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #c9a84c;
+	margin-bottom: 5px;
+}
+
+/* Style all form inputs the same way */
+.form-group input,
+.form-group select,
+.form-group textarea {
+	width: 100%;
+	padding: 9px 12px;
+	background-color: #08031a;
+	border: 1px solid #4a3060;
+	color: #e8dfc8;
+	font-family: 'Lora', serif;
+	font-size: 12px;
+}
+
+/* Gold border when an input is clicked on */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+	outline: none;
+	border-color: #c9a84c;
+}
+
+.form-group textarea { resize: vertical; }
+
+/* Feature cards on the about page - 3 sit in a row */
+.feature-card {
+	float: left;
+	width: 140px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background-color: #0d0520;
+	border: 1px solid #4a3060;
+	border-top: 3px solid #8b5cf6;
+	padding: 14px 10px;
+	text-align: center;
+}
+
+.feature-card.last { margin-right: 0; }
+
+.feature-card:hover {
+	border-color: #c9a84c;
+	border-top-color: #c9a84c;
+}
+
+.feature-card .icon {
+	font-size: 24px;
+	margin-bottom: 8px;
+	display: block;
+}
+
+.feature-card h4 {
+	font-family: 'Cinzel', serif;
+	font-size: 9px;
+	color: #c9a84c;
+	letter-spacing: 1px;
+	margin-bottom: 8px;
+	text-transform: uppercase;
+}
+
+.feature-card p {
+	font-size: 10px;
+	color: #b8a9d4;
+	font-style: italic;
+	line-height: 1.6;
+}
+
+/* Info items on the contact page */
+.info-item {
+	margin-bottom: 16px;
+	border-bottom: 1px solid #2a1840;
+	padding-bottom: 12px;
+}
+
+.info-item strong {
+	display: block;
+	font-family: 'Cinzel', serif;
+	font-size: 9px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: #c9a84c;
+	margin-bottom: 4px;
+}
+
+.info-item p {
+	font-size: 12px;
+	color: #b8a9d4;
+	font-style: italic;
+}
+
+/* Red bordered safety warning box */
+.safety-notice {
+	background-color: #1a0810;
+	border: 1px solid #6b1515;
+	border-left: 4px solid #a03030;
+	padding: 18px 22px;
+	margin-top: 24px;
+}
+
+.safety-notice h4 {
+	font-family: 'Cinzel', serif;
+	font-size: 10px;
+	color: #d06060;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin-bottom: 8px;
+}
+
+.safety-notice p {
+	font-size: 12px;
+	color: #c8a0a0;
+	font-style: italic;
+	line-height: 1.7;
+}
+
+/* Footer at the bottom of every page */
+#footer {
+	background-color: #05010c;
+	border: 3px solid #c9a84c;
+	border-top: 3px solid #8b5cf6;
+	padding: 28px 40px;
+	text-align: center;
+	margin-bottom: 20px;
+	display: block;
+}
+
+#footer .footer-links {
+	margin-bottom: 10px;
+	font-family: 'Cinzel', serif;
+	font-size: 11px;
+	letter-spacing: 1px;
+}
+
+#footer p {
+	margin: 5px 0;
+	font-size: 11px;
+	font-style: italic;
+	color: #b8a9d4;
+}
+
+/* Emergency phone number box on contact page */
+.emergency-line {
+	font-family: 'Cinzel', serif;
+	font-size: 13px;
+	color: #c9a84c;
+	padding: 10px 16px;
+	border: 1px solid #c9a84c;
+	display: inline-block;
+	margin-top: 6px;
+}
